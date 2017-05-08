@@ -1,38 +1,91 @@
-<!-- Bootstrap-powered Portolio -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>bootstrap portfolio</title>
-	<!-- Bootstrap cdn and viewport (is it necessary if using bootstrap?)-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- Bootstrap cdn. (Is viewport necessary if using bootstrap?)-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-	<!-- Container Div -->
-	<div class="container">
-
-	<!-- A standard nav bar is created with (source was google w3schools): -->
 	
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Anco Chien</a>
-			</div>
+	<title>bootstrap about me</title>
+</head>
 
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-	</nav>	
+<body>
+<nav class="navbar navbar-light">
+	
+	<div class="container-fluid">
+		
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>	
+		</button>
+		<a class="navbar-brand" href="#">Anco Chien</a>
+	</div>
+			
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	
+		
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>	  
+</div>
+</nav>	
 
 	<div class="container">
-		<div class= row>
-			<h1 class="col-lg-3">About Me</h1>
-		</div>	
+		
+		<div class="row"> 
+		<!-- the below div is for About Me. 8/12 is 2/3 space for About Me text -->
+			<div class="col-md-8"> 
 
+			<div class="page-header">
+				<h2>About Me</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-3" col-md-3">
+				<img src="anco-bootstrap.jpeg" width="150" height="130" alt="anco" class="thumbnail">
+				</div>
+					
+				<div class="col-sm-9 col-md-9">
+						<p>Hi! My name is Anco Chien and I am passionate about helping kids reach their full potential. My job involves giving assessments, writing educational plans, and teaching. My clients include children and adults who have a learning disability; are diagnosed with autism spectrum disorder; or are neurotypical. My passion and interest is learning how to create software to help children and adults strengthen their underlying learning processes so they can reach their language and literacy potential. How did this become my life?</p>
+			
+						<p>Well, in 2010, I was living as an expat in Taipei, Taiwan to learn Mandarin and fully immerse myself in the culture. I had two conversation partners who I'd meet up with twice a week. Turns out, most Taiwanese people want to learn English. I was offered a job teaching English to business professionals. But after a few months, I realized they needed something more intensive that I alone could not provide.</p>
 
+						<p>So I moved backed to California and learned all about learning. My goal is to create accessible, effective software for children and adults to use.</p>
+						
+						<p>Find me on LinkedIn, Github, and Stack Overflow!</p>
+				</div>	
+			</div>	
+		</div>
+		
+	<div class= "col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Contact Me</h3>
+			</div>
+			<div class="panel-body">
+			
+				<a href="#"><img src="githubcopy.jpg" width="50" height="50" class="social" alt="GitHub"/></a>
+				<a href="#"><img src="linkedincopy.png" width="50" height="50" class="social" alt="LinkedIn" /></a>
+				<a href="#"><img src="stackoverflow-128copy.png"  width="50" height="50" class="social" alt="Stack Overflow" /></a>
+          
+          </div>
+        </div>
+       </div>   	
+      </div>
+     </div>  
+
+     <div id="footer">
+     	<div class="container">
+     		<p class="text-muted credit">
+     			<span>&copy; Copyright 2017 Anco Chien</span>
+     			<a href="#"></a>
+     		</p>	
+		</div>
+	</div>			
+				
 </body>
 </html>
